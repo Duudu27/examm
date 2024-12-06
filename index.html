@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бүтээгдэхүүн менежмент</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/25/d1/9d/25d19df39b7ed9bb01e2d433b15280eb.jpg" alt="">
+        </div>
+        <div class="menu">
+            <button onclick="showHome()">Home</button>
+            <button onclick="showAddProduct()">Бүтээгдэхүүн нэмэх</button>
+            <button onclick="showCart()">Сагс</button>
+        </div>
+    </div>
+
+    <div id="home" class="page">
+        <h1>Бүтээгдэхүүн</h1>
+        <div id="product-list"></div>
+    </div>
+
+    <div id="add-product" class="page" style="display:none;">
+        <h1>Бүтээгдэхүүн нэмэх</h1>
+        <form id="productForm">
+            <input type="text" id="title" placeholder="Бүтээгдэхүүний нэр" required>
+            <input type="text" id="introduction" placeholder="Танилцуулга" required>
+            <input type="number" id="price" placeholder="Үнэ" required>
+            <input type="url" id="imageUrl" placeholder="Зургийн URL" required>
+            <button type="button" id="createButton">Нэмэх</button>
+        </form>
+    </div>
+
+    <div id="cart" class="page" style="display:none;">
+        <h1>Сагс</h1>
+        <div id="cart-list"></div>
+    </div>
+    
+    <div id="cart" class="page" style="display:none;">
+        <h1>Сагс</h1>
+        <div id="cart-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
